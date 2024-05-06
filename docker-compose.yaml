@@ -19,8 +19,8 @@ services:
      - 3306:3306
     volumes:
      - ./my-data:/var/lib/mysql
-     phpmyadmin:
-  image: corbinu/docker-phpmyadmin
+  db:
+  image: docker-phpmyadmin
   links:
     - wordpress_db:mysql
   ports:
