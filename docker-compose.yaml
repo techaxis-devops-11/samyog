@@ -19,12 +19,3 @@ services:
      - 3306:3306
     volumes:
      - ./my-data:/var/lib/mysql
-  db:
-  image: docker-phpmyadmin
-  links:
-    - wordpress_db:mysql
-  ports:
-    - 8181:80
-  environment:
-    MYSQL_USERNAME: root
-    MYSQL_ROOT_PASSWORD: samyog
